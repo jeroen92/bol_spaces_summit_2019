@@ -27,8 +27,7 @@ yum install -y git salt-minion vim
 
 mkdir -p /srv/salt
 
-#curl https://megalith.rocks/files/bol_spaces_summit_2019.tar.gz | tar xvz -C /srv/salt
-git clone git@github.com:jeroen92/bol_spaces_summit_2019.git /srv/salt
+git clone https://github.com/jeroen92/bol_spaces_summit_2019.git /srv/salt
 
 salt-call --local state.apply
 
