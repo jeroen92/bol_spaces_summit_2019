@@ -1,5 +1,7 @@
 #!/bin/env sh
 
+dmesg -n 1
+
 rootfs-expand
 
 if [ ! -f /etc/yum.repos.d/epel.repo ]; then
