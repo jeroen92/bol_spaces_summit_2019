@@ -75,6 +75,14 @@ var_www_index:
     - group: nginx
     - mode: 500
 
+var_www_poster:
+    file.managed:
+    - name: /var/www/poster2.png
+    - source: salt://files/poster2.png
+    - user: nginx
+    - group: nginx
+    - mode: 500
+
 dnsmasq_hosts:
     file.managed:
     - source: salt://files/dnsmasq.hosts
